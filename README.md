@@ -2,7 +2,7 @@
 
 ---
 
-## a good omnipotent app
+## a omnipotent app
 
 all protocols can be found in pashpon and its related agreements.
 
