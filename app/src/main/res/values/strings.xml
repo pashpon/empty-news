@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">empty-news</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="欢迎来到首页">home</string>
+    <string name="欢迎来到发现">found</string>
+    <string name="欢迎来到关注">add</string>
+    <string name="欢迎来到我的">my</string>
+</resources>
