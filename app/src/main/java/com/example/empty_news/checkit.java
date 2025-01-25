@@ -1,0 +1,54 @@
+package com.example.empty_news;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+import com.example.empty_news.download.FolderActivity;
+
+public class checkit extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // 设置布局
+        setContentView(R.layout.activity_folder);
+
+        // 查找id为account的控件
+        View qunButton = findViewById(R.id.checkit);
+
+        // 设置点击事件
+        if (qunButton != null) {
+            qunButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // 跳转到 AccountActivity
+                    Intent intent = new Intent(checkit.this, FolderActivity.class);
+                    startActivity(intent);
+                }
+            });
+        } else {
+            // 如果没有找到该视图，输出日志
+            Log.e("setActivity", "accountButton not found in the layout!");
+        }
+
+        // 启用 Edge-to-Edge 模式，处理状态栏等窗口内边距
+        ViewCompat.setOnApplyWindowInsetsListener(getWindow().getDecorView(), (view, insets) -> {
+            // 获取系统边距（包括状态栏和导航栏）
+            Insets newInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+
+            // 处理边距（可以根据需要进行修改）
+            view.setPadding(newInsets.left, newInsets.top, newInsets.right, newInsets.bottom);
+
+            // 返回更新后的 insets
+            return insets.consumeSystemWindowInsets();
+        });
+    }
+}

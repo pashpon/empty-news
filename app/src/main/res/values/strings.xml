@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">empty-news</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="欢迎来到首页">home</string>
+    <string name="欢迎来到发现">found</string>
+    <string name="欢迎来到关注">add</string>
+    <string name="欢迎来到我的">my</string>
+
+    <string name="text1">扫一扫</string>
+    <string name="text2">添加到桌面</string>
+    <string name="text3">插件</string>
+    <string name="text4">代码</string>
+    <string name="text5">添加书签</string>
+    <string name="text6">书签</string>
+    <string name="text7">电脑模式</string>
+    <string name="text8">保存</string>
+    <string name="text9">离线页面</string>
+    <string name="text10">源码</string>
+    <string name="text11">夜间模式</string>
+    <string name="text12">历史数据</string>
+    <string name="text13">阅读模式</string>
+    <string name="text14">设置</string>
+    <string name="text15">信息</string>
+
+    <string name="icon1_desc">图标1描述</string>
+    <string name="icon2_desc">图标2描述</string>
+    <string name="icon3_desc">图标3描述</string>
+    <string name="icon4_desc">图标4描述</string>
+    <string name="icon5_desc">图标5描述</string>
+    <string name="icon6_desc">图标6描述</string>
+    <string name="icon7_desc">图标7描述</string>
+    <string name="icon8_desc">图标8描述</string>
+    <string name="icon9_desc">图标9描述</string>
+    <string name="icon10_desc">图标10描述</string>
+    <string name="icon11_desc">图标11描述</string>
+    <string name="icon12_desc">图标12描述</string>
+    <string name="icon13_desc">图标13描述</string>
+    <string name="icon14_desc">图标14描述</string>
+    <string name="icon15_desc">图标15描述</string>
+
+</resources>

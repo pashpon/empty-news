@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:ignore="ExtraText">
+
+    <!-- 上半部分内容 -->
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+    android:columnCount="1"
+    android:orientation="vertical"
+    android:rowCount="8"
+    android:padding="0dp"
+    android:background="#FFFFFF">
+
+    <!-- 示例内容：Alice 按钮 -->
+    <FrameLayout
+        android:id="@+id/alice"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/noenter">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Alice"
+            android:minWidth="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginEnd="4dp" />
+    </FrameLayout>
+
+    <!-- 示例内容：奶龙二世 按钮 -->
+    <FrameLayout
+        android:id="@+id/nai"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/noenter"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="奶龙二世"
+            android:minWidth="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginEnd="4dp" />
+    </FrameLayout>
+
+    <!-- 示例内容：LyraInc 按钮 -->
+    <FrameLayout
+        android:id="@+id/inc"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/noenter"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="LyraInc"
+            android:minWidth="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginEnd="4dp" />
+    </FrameLayout>
+</GridLayout>
+
+    <!-- 下半部分的正方形 -->
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/square_background"
+    android:layout_gravity="center">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="暂无内容"
+android:textColor="@android:color/white"
+android:textSize="18sp"
+android:layout_gravity="center" />
+    </FrameLayout>
+
+    </LinearLayout>
